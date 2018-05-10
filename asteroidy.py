@@ -26,6 +26,7 @@ klavesy = set ()
 def tiktak(t):
     global rychlost
     global uhel
+    
     #posun
     sprite.x = sprite.x + rychlost*t*sin(pi*uhel/180)
     sprite.y = sprite.y + rychlost*t*cos(pi*uhel/180)
@@ -47,7 +48,7 @@ def tiktak(t):
         if sym == RIGHT:
             uhel += 10
             sprite.rotation += 10
-            sprite.rotation += 10
+        
 
 @window.event
 def on_draw():
